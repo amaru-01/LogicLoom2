@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LogicLoom</title>
+</head>
+<body>
+
+    <!--- Section --->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/LogicLoom white.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>     
+                <i class="fa fa-bars" onclick="showMenu()"></i>    
+        </nav>
+        <h1>Our Team Members & Online Programs For 2024</h1>
+    </section>
+
+
+    <!--- Blog page Content --->
+
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Our Team Members & Online Programs For 2024</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem aperiam nobis natus reprehenderit sunt eligendi voluptates. Ullam aliquam et ipsa deleniti in debitis, aut nulla ipsum cumque consequatur aspernatur eaque doloribus quos natus reprehenderit quia impedit blanditiis reiciendis tempora. Esse!</p> <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam optio fugiat quo, nulla consequuntur culpa tempore tempora, suscipit aperiam consequatur vel sed praesentium placeat corporis possimus ducimus laborum reiciendis. Numquam quos sunt dignissimos officiis accusantium. Magni a nobis aut amet.</p>
+                <br><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem aperiam nobis natus reprehenderit sunt eligendi voluptates. Ullam aliquam et ipsa deleniti in debitis, aut nulla ipsum cumque consequatur aspernatur eaque doloribus quos natus reprehenderit quia impedit blanditiis reiciendis tempora. Esse!</p> <br> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam optio fugiat quo, nulla consequuntur culpa tempore tempora, suscipit aperiam consequatur vel sed praesentium placeat corporis possimus ducimus laborum reiciendis. Numquam quos sunt dignissimos officiis accusantium. Magni a nobis aut amet.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+
+
+                </div>
+
+
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Entertainment</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Sports</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Technology</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Politics</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Lifestyle</span>
+                    <span>30</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+   
+        <!--- Footer --->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, et aliquam expedita minus amet omnis quod temporibus consequuntur est accusamus aliquid praesentium delectus!<br> Repudiandae labore, hic aliquid nulla ipsum doloremque omnis praesentium ducimus sint eligendi ad facilis magnam laboriosam officiis?</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>    
+            <p>Made with <i class="fa fa-heart-o"></i> by Amaru</p>
+        </section>
+
+
+
+    <!--- JS for toggle Menu --->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!--- Fontawesome --->
+
+    <script src="https://kit.fontawesome.com/6a7b1bf781.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
