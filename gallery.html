@@ -30,7 +30,21 @@
 
 
     <!--- Gallery --->
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/background.jpg" alt="Image 1" data-details="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+        </div>
+        <div class="gallery-item">
+            <img src="images/background.jpg" alt="Image 2" data-details="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+        </div>
+        </div>
 
+    <!--- Lightbox (Hidden by default) --->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img src="" id="lightbox-image" alt="">
+        <div class="lightbox-details" id="lightbox-details"></div>
+    </div>
    
    
         <!--- Footer --->
@@ -62,6 +76,25 @@
         function hideMenu(){
             navLinks.style.right = "-200px";
         }
+
+        // Lightbox Functionality
+        const galleryItems = document.querySelectorAll('.gallery-item img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxDetails = document.getElementById('lightbox-details');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                lightboxImage.src = item.src;
+                lightboxDetails.textContent = item.dataset.details;
+                lightbox.style.display = 'block';
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
+
     </script>
 
     <!--- Fontawesome --->
