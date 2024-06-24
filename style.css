@@ -8,6 +8,22 @@
 body{
     background: #F8f8ff ;
 }
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px; /* Scrollbar width */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Track background */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ec0808; /* Thumb background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow */
+  }
+  
 .header{
     min-height: 100vh;
     width: 100%;
