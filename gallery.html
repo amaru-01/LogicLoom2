@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
     <title>LogicLoom</title>
 </head>
 <body>
@@ -30,23 +31,31 @@
 
 
     <!--- Gallery --->
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <img src="images/background.jpg" alt="Image 1" data-details="Picture 1">
-        </div>
-        <div class="gallery-item">
-            <img src="images/basketball.png" alt="Image 2" data-details="Picture 2">
-        </div>
-        <div class="gallery-item">
-            <img src="images/banner.jpg" alt="Image 2" data-details="Picture 3">
-        </div>
+    <div class="container">
+
+        <div class="gallery">
+            <a href="Images/basketball.png" data-lightbox="pictures" data-title="Caption1">
+                <img src="Images/basketball.png" alt="">
+            </a>            
+            
+            <a href="Images/background.jpg" data-lightbox="pictures" data-title="Caption2">
+                <img src="Images/background.jpg" alt="">
+            </a> 
+
+            <a href="Images/banner.jpg" data-lightbox="pictures" data-title="Caption3">
+                <img src="Images/banner.jpg" alt="">
+            </a> 
+
+            <a href="Images/user1.jpg" data-lightbox="pictures" data-title="Caption4">
+                <img src="Images/user1.jpg" alt="">
+            </a> 
+
+            <a href="Images/user2.jpg" data-lightbox="pictures" data-title="Caption5">
+                <img src="Images/user2.jpg" alt="">
+            </a> 
+
         </div>
 
-    <!--- Lightbox (Hidden by default) --->
-    <div class="lightbox" id="lightbox" style="display: none;">
-        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
-        <img src="" id="lightbox-image" alt="">
-        <div class="lightbox-details" id="lightbox-details"></div>
     </div>
    
    
@@ -80,29 +89,12 @@
             navLinks.style.right = "-200px";
         }
 
-        // Lightbox Functionality
-        const galleryItems = document.querySelectorAll('.gallery-item img');
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImage = document.getElementById('lightbox-image');
-        const lightboxDetails = document.getElementById('lightbox-details');
-
-        galleryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                lightboxImage.src = item.src;
-                lightboxDetails.textContent = item.dataset.details;
-                lightbox.style.display = 'block';
-            });
-        });
-
-        function closeLightbox() {
-            lightbox.style.display = 'none';
-        }
 
     </script>
 
     <!--- Fontawesome --->
 
     <script src="https://kit.fontawesome.com/6a7b1bf781.js" crossorigin="anonymous"></script>
-
+    <script src="lightbox-plus-jquery.js"></script>
 </body>
 </html>
