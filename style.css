@@ -599,3 +599,39 @@ h3{
 .about-us .wrapper{
     margin-top: 30x;
 }
+
+/* CEO Section */
+
+.ceo-header {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    color: #333;
+}
+
+.ceo-section {
+    margin-top: 150px;
+}
+
+.ceo-section .ceo-col {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+}
+
+.ceo-section .ceo-col img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.ceo-col{
+    margin-right: 100px;
+}
+
+/* Divider Line */
+.divider {
+    width: 80%;
+    margin: 40px auto;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+}
