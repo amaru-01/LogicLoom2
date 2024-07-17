@@ -636,6 +636,8 @@ h3{
     background: #ddd;
 }
 
+
+/* Whatsapp button */
 .whatsapp-btn-container {
     position: fixed;
     right: 30px;
@@ -662,13 +664,10 @@ h3{
 
 .whatsapp-btn-container .whatsapp-btn:hover {
     transform: scale(1.2);
+    color: #128c7e;
 }
 
 
-
-/* .whatsapp-btn-container .whatsapp-btn:hover {
-    color: #128c7e;
-} */
 
 .whatsapp-btn-container span{
     position: absolute;
